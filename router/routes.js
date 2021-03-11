@@ -11,4 +11,11 @@ route.get('/books.ejs',(req,res)=>
     res.render('books');
 });
 
+route.get("/return.ejs",(req,res)=>{
+    res.render("return");
+})
+
+route.get("/issue.ejs",(req,res)=>{
+    res.render("issue");
+})
 module.exports=route;
