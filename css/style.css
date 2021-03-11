@@ -24,9 +24,9 @@
 .row-heading-btns{
     padding-top: px;
     padding-right: 30px;
-   
 }
 .btn{
+    text-decoration: none;
     background-color: white;
     font-family: 'Lusitana', serif;
     border: none;
