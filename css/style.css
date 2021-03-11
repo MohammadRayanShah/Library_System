@@ -2,12 +2,28 @@
     margin: 0px;
     padding: 0px;
 }
-.row-heading{
-    /* padding-bottom: 10px; */
-    background-color:white;
-   box-shadow: 0px 2px #69727a;
+.container-heading{
+    display: flex;
+ justify-content: right;
+ border-bottom: 1px solid #453b5c ;
+}
+.row-heading-text{
+    margin-right: 700px;
+}
+.row-heading-btns{
+    padding-top: 20px;
+    padding-right: 20px;
     
 }
+.issue{
+    background-color: #032c6e;
+    color: white;
+}
+.return{
+    background-color: #032c6e;
+    color: white;
+}
+
 .headingText
 {
     padding-left: 50px;
@@ -18,4 +34,12 @@
     width: 900px;
     height: 85%;
     padding-left: 150px;
+}
+.intro-container{
+    color: #453b5c;
+    text-align: center;
+}
+.FrontName{
+    color: #0c192e;
+    font-size: 200%;
 }
