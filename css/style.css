@@ -1,45 +1,71 @@
-.container{
-    margin: 0px;
+*{
+   margin: 0px;
     padding: 0px;
 }
+/* Top Navigation */
 .container-heading{
     display: flex;
- justify-content: right;
+    margin-top: 15px;
+    justify-content: right;
  border-bottom: 1px solid #453b5c ;
 }
-.row-heading-text{
-    margin-right: 700px;
-}
-.row-heading-btns{
-    padding-top: 20px;
-    padding-right: 20px;
-    
-}
-.issue{
-    background-color: #032c6e;
-    color: white;
-}
-.return{
-    background-color: #032c6e;
-    color: white;
-}
-
+/* Top Navigation text*/
 .headingText
 {
-    padding-left: 50px;
     font-family: 'Lusitana', serif;
+    padding-left: 50px;
     color: #453b5c;
 }
+.row-heading-text{
+    margin-right: 600px;
+    margin-bottom: 15px;
+}
+/* Top Navigation buttons*/
+.row-heading-btns{
+    padding-top: px;
+    padding-right: 30px;
+   
+}
+.btn{
+    background-color: white;
+    font-family: 'Lusitana', serif;
+    border: none;
+    color: #0300b8;
+    font-size: 130%;
+    cursor: pointer;
+}
+.btn:hover{
+    color: blue;
+    border: none;
+    background-color: white;
+}
+/* Index front desription */
+.intro-container{
+    padding-top: 40px;
+    color: #453b5c;
+    text-align: center;
+    font-family: 'Lusitana', serif;
+    
+}
+.FrontName{
+    color: #0c192e;
+    font-size: 300%;
+}
+/* Index front rolling images */
 .index-images{
+    padding-top: 20px;
     width: 900px;
     height: 85%;
     padding-left: 150px;
 }
-.intro-container{
-    color: #453b5c;
+
+/* Index copyright footer */
+
+.container-copyright{
+    padding: 3px;
+    background-color: #1c1c21;
+    color:white;
     text-align: center;
-}
-.FrontName{
-    color: #0c192e;
-    font-size: 200%;
+    font-size: 80%;
+    font-family:Arial, Helvetica, sans-serif;
 }
