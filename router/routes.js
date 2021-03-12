@@ -18,4 +18,8 @@ route.get("/return.ejs",(req,res)=>{
 route.get("/issue.ejs",(req,res)=>{
     res.render("issue");
 })
+route.get('/index.ejs',(req,res)=>
+{
+    res.render("index");
+})
 module.exports=route;
