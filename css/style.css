@@ -79,16 +79,19 @@
     font-size: 230%;
     font-family: 'Lusitana', serif;       
     padding-bottom: 30px;
+    font-family: 'Lusitana', serif;
 }
 /* Books add book button */
 .books-addbook-btn-container{
 text-decoration: none;
 padding-left: 200px;
 padding-bottom: 10px;
+font-family: 'Lusitana', serif;
 }
 .books-addbook-btn{
     text-decoration: none;
     color: #0300b8;  
+    font-family: 'Lusitana', serif;
 }
 .books-addbookd-btn:hover{
     color: blue;
@@ -98,6 +101,7 @@ padding-bottom: 10px;
 table , th, td {
     padding: 10px 70px;
     border-collapse: collapse;    
+    /* font-family: 'Lusitana', serif; */
 }
 th ,td{
     border: 1px solid black;
@@ -107,10 +111,15 @@ th ,td{
     /* padding: 5px 250px; */
 }
 .table-head{
-    background-color: #25e6c5;
+    background-color: #1f1726;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.table-details{
+    font-family: 'Lusitana', serif;
 }
 .table-details:hover{
-    background-color: #03fc1c;
+    background-color: #00ffef;
 }
 /* Books table edit */
 .books-edit-btn{
