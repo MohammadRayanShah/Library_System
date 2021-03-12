@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Included font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <title>Books</title>
 </head>
 
 <body>
-    <h1>Working!</h1>
+    <div class="container">
+        <!-- Heading start -->
+        <div class="books-heading-container">
+            <h1 class="books-heading-text">List of books</h1>
+        </div>
+        <!-- Add Book btn -->
+        <div class="books-addbook-btn-container">
+            <a href="#" class="books-addbook-btn">Add Book</a>
+        </div>
+        <!-- Books table -->
+        <div class="books-table-container">
+            <table class="books-table">
+                <tr>
+                    <th>Id</th>
+                    <th>Name of the Book</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to C++ </td>
+                    <td><a class="books-edit-btn" href="#"> <i class="fas fa-edit"></i> </a></td>
+                    <td><a class="books-delete-btn" href="#"> <i class="fas fa-trash"></i></a></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
