@@ -1,25 +1,15 @@
 const express=require("express");
 const route =express();
+const services=require("../render/render")
 
-route.get('/',(req,res)=>
-{
-    res.render('index');
-});
+//services.homeRoutes will handle index page with this get request in render.js
+route.get('/',services.homeRoutes);
 
-route.get('/books.ejs',(req,res)=>
-{
-    res.render('books');
-});
+route.get('/books',services.books);
 
-route.get("/return.ejs",(req,res)=>{
-    res.render("return");
-})
+route.get("/return",services.return)
 
-route.get("/issue.ejs",(req,res)=>{
-    res.render("issue");
-})
-route.get('/index.ejs',(req,res)=>
-{
-    res.render("index");
-})
+route.get("/issue",services.issue)
+
+route.get('/index',services.index)
 module.exports=route;
