@@ -99,7 +99,7 @@ font-family: 'Lusitana', serif;
 /* Books table start */
 
 table , th, td {
-    padding: 10px 70px;
+    padding: 10px 60px;
     border-collapse: collapse;    
     /* font-family: 'Lusitana', serif; */
 }
@@ -107,7 +107,7 @@ th ,td{
     border: 1px solid black;
 }
 .books-table{
-    margin-left: 20px;
+    margin-left: 55px;
     /* padding: 5px 250px; */
 }
 .table-head{
