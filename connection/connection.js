@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-MONGO_URI="mongodb+srv://admin:<password>@cluster0.sxprh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+MONGO_URI="mongodb+srv://admin:admin123@cluster0.sxprh.mongodb.net/books?retryWrites=true&w=majority";
 
 const connectDb= async ()=>
 {
@@ -7,8 +7,9 @@ const connectDb= async ()=>
         const con=await mongoose.connect(MONGO_URI,{
             useNewUrlParser:true,
             useUnifiedTopology:true,
+            useFindAndModify:false,
             useCreateIndex:true,
-            useFindAndModify:false
+            
         })
         console.log(`MongoDB connected ${con.connection.host}`);
     }

@@ -17,10 +17,29 @@ exports.create=(req,res)=>{
 
     book
     .save(book)
-    .then((data)=>{
-res.redirect("/books");
+    .then(data=>{
+res.send(data)
     })
-    .catch((err=>{
-        res.status(500).send("error!")
-    }))
+
+    .catch(err=>{
+        res.status(500).send({message :err.message || "error"
+    })
+ })
+}
+//retrive all books/retrive a single book
+
+exports.find=(req,res)=>{
+
+}
+
+// Update a book
+
+exports.update=(req,res)=>{
+
+}
+
+//delete a book
+
+exports.delete=(req,res)=>{
+
 }
