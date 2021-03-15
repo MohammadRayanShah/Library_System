@@ -14,6 +14,7 @@ route.get("/issue",services.issue)
 
 route.get('/index',services.index)
 
+route.get("/add_book",services.add_book)
 //API
 route.post('/api/books',controller.create);
 route.get('/api/books',controller.find)

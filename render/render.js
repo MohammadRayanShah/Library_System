@@ -17,3 +17,6 @@ exports.issue=(req,res)=>{
 exports.index=(req,res)=>{
     res.render("index");
 }
+exports.add_book=(req,res)=>{
+    res.render("add_book");
+}
