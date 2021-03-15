@@ -10,7 +10,9 @@ exports.create=(req,res)=>{
     }
     //new book
     const book=new Bookdb({
-        name:req.body.name
+        name:req.body.name,
+        author:req.body.author,
+        pages:req.body.pages
     })
 
     //save book in the database

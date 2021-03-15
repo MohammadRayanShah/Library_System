@@ -4,6 +4,14 @@ name:{
     type:String,
     unique:true,
     required:true
+},
+author:{
+    type:String,
+    required:true
+},
+pages:{
+    type:Number,
+    required:true
 }
 });
 const Bookdb=mongoose.model("bookdb",schema);
