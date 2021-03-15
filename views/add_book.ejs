@@ -47,11 +47,18 @@
             <a class="books-addbook-btn" href="./books"><i class="fas fa-backward"></i> Back</a>
         </div>
         <!-- Form to enter details for new book -->
-        <form action="./add_book" method="POST" class="form-add_book">
-            <input class="book-name-form" type="text" placeholder="Name of the book" name="bookName">
-            <input class="book-author-form" type="text" placeholder="Author of the book" name="autorName">
-            <input class="book-pages-form" type="text" placeholder="Pages in the book" name="bookPages">
-            <input type="submit" class="book-submit-form" name="bookSubmit">
+        <form action="#" method="POST" class="form-add_book">
+            <input type="hidden" name="id">
+
+            <label for="bookName" class="label book-name-label">Name</label>
+            <input class="input book-name-form" type="text" placeholder="Name of the book" name="bookName"><br>
+
+            <label for="authorName" class="label book-name-label">Author</label>
+            <input class="input book-author-form" type="text" placeholder="Author of the book" name="autorName"><br>
+
+            <label for="bookPages" class="label book-name-label">Pages</label>
+            <input class="input book-pages-form" type="text" placeholder="Pages in the book" name="bookPages"><br>
+            <input type="submit" class="label book-submit-form" name="bookSubmit" value="save">
         </form>
     </body>
 
