@@ -46,6 +46,13 @@
         <div class="books-addbook-btn-container">
             <a class="books-addbook-btn" href="./books">Back</a>
         </div>
+        <!-- Form to enter details for new book -->
+        <form action="./add_book" method="POST" class="form-add_book">
+            <input class="book-name-form" type="text" placeholder="Name of the book" name="bookName">
+            <input class="book-author-form" type="text" placeholder="Author of the book" name="autorName">
+            <input class="book-pages-form" type="text" placeholder="Pages in the book" name="bookPages">
+            <input type="submit" class="book-submit-form" name="bookSubmit">
+        </form>
     </body>
 
 </html>
