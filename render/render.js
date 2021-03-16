@@ -20,3 +20,6 @@ exports.index=(req,res)=>{
 exports.add_book=(req,res)=>{
     res.render("add_book");
 }
+exports.update_book=(req,res)=>{
+    res.render("update_book");
+}
