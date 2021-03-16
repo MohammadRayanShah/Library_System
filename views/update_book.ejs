@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Included font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- Include style.css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Included Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@700&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Working</h1>
+    <div class="container-heading">
+        <div class="row-heading-text">
+            <h2 class="headingText">Educational Library </h2>
+        </div>
+        <div class="row-heading-btns">
+            <a class="btn issue" href="./issue">Issue</a>
+        </div>
+        <div class="row-heading-btns">
+            <a class="btn return" href="./return">Return</a>
+        </div>
+        <div class="row-heading-btns">
+            <a class="btn books" href="./index">Home</a>
+        </div>
+    </div>
+    <!-- Heading start -->
+    <div class="books-heading-container">
+        <h1 class="books-heading-text">Update Book</h1>
+    </div>
+    <!-- Add Book btn -->
+    <div class="books-addbook-btn-container">
+        <a class="books-addbook-btn" href="./books"><i class="fas fa-backward"></i> Back</a>
+    </div>
+    <!-- Form to enter details for new book -->
+    <form action="./books" method="GET" class="form-add_book">
+        <input type="hidden" name="id">
+
+        <label for="bookName" class="label book-name-label">Name</label>
+        <input class="input book-name-form" type="text" placeholder="Name of the book" name="bookName"><br>
+
+        <label for="authorName" class="label book-name-label">Author</label>
+        <input class="input book-author-form" type="text" placeholder="Author of the book" name="autorName"><br>
+
+        <label for="bookPages" class="label book-name-label">Pages</label>
+        <input class="input book-pages-form" type="text" placeholder="Pages in the book" name="bookPages"><br>
+        <input type="submit" class="label book-submit-form" name="bookSubmit" value="Update">
+    </form>
 </body>
 
 </html>
