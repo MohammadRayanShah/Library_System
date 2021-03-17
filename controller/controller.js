@@ -31,6 +31,14 @@ res.send(data)
 //retrive all books/retrive a single book
 
 exports.find=(req,res)=>{
+Bookdb.find()
+.then(book=>{
+    res.send(book)
+})
+.catch(err=>
+{
+res.status(500).send({message :err.message || "error"})
+})
 
 }
 
