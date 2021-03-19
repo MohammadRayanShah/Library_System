@@ -1,5 +1,5 @@
 var Bookdb=require("../Schema/schema");
-
+ 
 // create and save new book
 exports.create=(req,res)=>{
     //validation
@@ -37,7 +37,7 @@ Bookdb.find()
 })
 .catch(err=>
 {
-res.status(500).send({message :err.message || "error"})
+res.status(500).send({message :err.message || "Error"})
 })
 
 }
@@ -45,7 +45,24 @@ res.status(500).send({message :err.message || "error"})
 // Update a book
 
 exports.update=(req,res)=>{
-
+if(!req.body)
+{
+    return res.status(400).send({message:"Data to update cannot be empty"})
+}
+const id=req.params.id;
+Bookdb.findByIdAndUpdate(id,req.body,{useFindAndModify:false})
+.then((data)=>{
+    if(!data)
+    {
+        res.status(404).send({message:`User not found with id : ${id}`})
+    }
+    else{
+        res.send(data);
+    }
+})
+.catch(err=>{
+    res.status(500).send({message:"Error updating the user!"})
+})
 }
 
 //delete a book
