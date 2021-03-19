@@ -31,6 +31,25 @@ res.send(data)
 //retrive all books/retrive a single book
 
 exports.find=(req,res)=>{
+    if(req.query.id)
+{
+    const id=req.query.id;
+    Bookdb.findById(id)
+    .then((data)=>{
+        if(!data)
+        {
+            res.status(404).send({message :"user not found try again!"})
+            return;
+        }
+        else{
+            res.send(data);
+        }
+    })
+    .catch(err=>{
+        res.status(500).send({message:"Error while getting the book"})
+    })
+}
+else{
 Bookdb.find()
 .then(book=>{
     res.send(book)
@@ -41,7 +60,7 @@ res.status(500).send({message :err.message || "Error"})
 })
 
 }
-
+}
 // Update a book
 
 exports.update=(req,res)=>{
