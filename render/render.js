@@ -1,6 +1,6 @@
 exports.homeRoutes=(req,res)=>{
-    res.render('index');
-}
+res.render('index');
+    }
 
 exports.books=(req,res)=>{
     res.render('books');
