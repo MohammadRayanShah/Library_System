@@ -97,9 +97,26 @@ font-family: 'Lusitana', serif;
     color: blue;
 }
 /* Books table start */
-
+.tableId{
+    width: 5px;
+}
+.tableName{
+    width: 300px;
+}
+.tableAutor{
+    width: 300px;
+}
+.tablePages{
+    width: 5px;
+}
+.tableEdit{
+    width: 5px;
+}
+.tableRemove{
+    width: 5px;
+}
 table , th, td {
-    padding: 10px 60px;
+    padding: 10px 30px;
     border-collapse: collapse;    
     /* font-family: 'Lusitana', serif; */
 }
@@ -121,6 +138,7 @@ th ,td{
 .table-details:hover{
     background-color: #00ffef;
 }
+
 /* Books table edit */
 .books-edit-btn{
 padding-left: 9px;
