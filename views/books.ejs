@@ -57,18 +57,28 @@
                         <th>Edit</th>
                         <th>Remove</th>
                     </tr>
-                    <tr class="table-details">
-                        <td>1</td>
-                        <td>Introduction to C++ </td>
-                        <td>Jhon Doe</td>
-                        <td>435</td>
-                        <td><a class="books-edit-btn" href="./update_book"> <i class="fas fa-edit"></i> </a></td>
-                        <td><a class="books-delete-btn" href="#"> <i class="fas fa-trash"></i></a></td>
-                    </tr>
-
+                    <% for(var i=0 ;i<books.length;i++) { %>
+                        <tr class="table-details">
+                            <td>
+                                <%=i+1%>
+                            </td>
+                            <td>
+                                <%=books[i].name%>
+                            </td>
+                            <td>
+                                <%=books[i].author%>
+                            </td>
+                            <td>
+                                <%=books[i].pages%>
+                            </td>
+                            <td><a class="books-edit-btn" href="./update_book"> <i class="fas fa-edit"></i> </a>
+                            </td>
+                            <td><a class="books-delete-btn" href="#"> <i class="fas fa-trash"></i></a></td>
+                        </tr>
+                        <% } %>
                 </table>
             </div>
-            <%= books%>
+
     </div>
 </body>
 

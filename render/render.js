@@ -1,4 +1,4 @@
-const axios =require("axios")
+const axios =require("axios");
 exports.homeRoutes=(req,res)=>{
 res.render('index');
     }
@@ -7,11 +7,10 @@ exports.books=(req,res)=>{
     //Making a get request to get data in books.ejs
 axios.get("http://localhost:5000/api/books")
 .then(function(response){                       //returning a promise
-    console.log(response.data)
     res.render('books',{books:response.data});
 })
  .catch(err=>{
-     res.send(`message: ${err}`)
+     res.send(`Message: ${err}`)
  })
 }
 
